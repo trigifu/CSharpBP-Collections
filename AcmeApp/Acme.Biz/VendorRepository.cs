@@ -29,6 +29,20 @@ namespace Acme.Biz
             return vendor;
         }
 
+        public T RetieveValue<T>(string sql,
+                                 T defaultValue) where T : struct
+        {
+            T value = defaultValue;
+            return value;
+        }
+
+        public string RetieveValue(string sql,
+                                   string defaultValue)
+        {
+            string value = defaultValue;
+            return value;
+        }
+
         /// <summary>
         /// Save data for one vendor.
         /// </summary>
